@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>Jimit Raval Quick Launcher</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>        
+        <link crossorigin="anonymous" integrity="" href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css"/>
+        
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+        
+        <style>
+            
+            :root{
+                --primary-color: #f7eeff;
+                --secondary-color: #212121;
+                --tertiary-color: #8a2be2;   
+            }
+
+            .dark-theme {
+                --primary-color: #2d333b;
+                --secondary-color: #f7eeff;
+                --tertiary-color: #f7eeff;
+            }
+
+            p {
+                color:var(--secondary-color);
+            }
+
+            html, body {
+                background: var(--primary-color);
+                font-family: "Roboto"; 
+                font-size: 14px;
+                margin: 0;
+                min-height: 180px;
+                padding: 0;
+                width: 384px;
+            }
+
+            h1 {
+                flex: 1;
+                text-align: center;
+                font-family: "Montserrat";
+                font-size: 22px;
+                font-weight: 400;
+                margin: 0;
+                color: var(--tertiary-color);
+            }
+
+            a:link, a:visited {
+                color:black;
+                outline: 0;
+                text-decoration: none;
+            }
+
+            img {
+                width: 30px;
+            }
+
+            .modal-header {
+                align-items: center;
+                border-bottom: 0.5px solid #dadada;
+            }
+
+            .modal-content {
+                padding: 0 22px;
+            }
+
+            .modal-icons {
+                border-top: 0.5px solid #dadada;
+                height: 50px;
+                width: 100%;
+            }
+
+            .logo {
+                padding: 10px;
+            }
+
+            .logo-icon {
+                vertical-align: text-bottom;
+                margin-right: 12px;
+            }
+
+            .version {
+                color: #444;
+                font-size: 18px;
+            }
+
+            .flex-container {
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 22px;
+            }
+
+            .flex {
+                opacity: 1;
+                transition: opacity 0.2s ease-in-out;
+                width: 120px;
+            }
+
+            .flex:hover {
+                opacity: 0.4;
+            }
+
+            .flex .fa {
+                font-size: 40px;
+                color: var(--tertiary-color);  
+            }
+
+            #theme {
+                width: 30px;
+                cursor: pointer;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="modal-header">
+            <h1 class="logo">
+                <img src="images/jr-logo.png" alt="Jimit Raval Launcher" class="logo-icon"> 
+                <strong>Jimit Raval Launcher</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="images/moon.png" alt="dark mode" id="theme">
+            </h1>
+        </div>
+        <div class="modal-content">
+            <p>Easy access to my Social Media Handles</p>
+        </div>
+        <div class="modal-icons">
+            <div class="flex-container">
+                <div class="flex">
+                    <a rel="noopener noreferrer" aria-label="gmail" href="mailto:12jraval@gmail.com" target="_blank">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <div class="flex">
+                    <a rel="noopener noreferrer" aria-label="github" href="https://github.com/jimmi1998" target="_blank">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                </div>
+           
+                <div class="flex">
+                    <a rel="noopener noreferrer" aria-label="linkedin" href="https://www.linkedin.com/in/jimit-raval/" target="_blank">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+            
+                <div class="flex">
+                    <a rel="noopener noreferrer" href="https://www.behance.net/jimitraval" target="_blank" aria-label="behance">
+                        <i class="fa fa-behance" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="popup.js"></script>
+    </body>
+</html>
